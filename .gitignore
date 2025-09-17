@@ -1,0 +1,6 @@
+data/*
+experiments/*
+venv
+results/*
+*.pyc
+

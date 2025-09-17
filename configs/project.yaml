@@ -1,0 +1,38 @@
+project_dirs:
+  data_dir: "data"
+  experiments_dir: "experiments"
+  models_dir: "models"
+
+
+dataset_dirs:
+  images_input_dir: "data/data/images"
+  images_output_dir: "data/images"
+  images_train_dir: "data/images/train"
+  images_val_dir: "data/images/val"
+  images_test_dir: "data/images/test"
+
+  labels_input_dir: "data/data"
+  labels_output_dir: "data/labels"
+  labels_train_dir: "data/labels/train"
+  labels_val_dir: "data/labels/val"
+  labels_test_dir: "data/labels/test"
+
+data_split:
+  number_images: 5000
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+
+yolo_config:
+  yolo_yaml: "configs/data_set.yaml"
+
+training:
+  epochs: 50
+  batch: 32
+  imgsz: 640
+  patience: 5
+  device: 0   # GPU ID (0) or 'cpu'
+
+inference_dir:
+    inference_output_dir: data/inference
+  
